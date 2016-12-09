@@ -5,7 +5,7 @@
  * Project Name: NYC Design
  * Version: 1.0
  * Date: 04-20-2014
- * URL: 
+ * URL:
  */
 
 
@@ -37,8 +37,8 @@ textarea {
 }
 
 ::selection {
-    background: #16a085;
-    color: #a4003a;
+    background: #ffffff;
+    color: #ffffff;
     text-shadow: none;
 }
 
@@ -73,7 +73,7 @@ body {
     font-family: "Lato" sans-serif;
     font-weight: 400;
     font-size: 16px;
-    color: #000;
+    color: rgb(255,255,255);
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -84,6 +84,61 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 300;
 }
 
+h1{
+  font-family: 'Bungee', cursive;
+}
+
+
+
+.headimg{
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: calc(25vh - 70px);
+}
+
+/*img.headimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}*/
+
+.button {
+	display: inline-block;
+	width: 200px;
+	height: 54px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline: none;
+}
+.button::before,
+.button::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+.button,
+.button::before,
+.button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+	background-color: rgb(0, 0 ,0);
+	color: #fff;
+}
+.button:hover {
+	background-color: rgba(255, 255, 255, 0.87);
+}
 /* ==========================================================================
    MENU CONFIGURATION
    ========================================================================== */
@@ -142,6 +197,12 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 }
 
+.youtube iframe{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .menu a:hover {
 	color: #ffffff;
 }
@@ -153,7 +214,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu a > i {
 	float: left;
 	display: inline-block;
-	vertical-align: middle; 
+	vertical-align: middle;
 	text-align: left;
 	width: 25px;
 	font-size: 14px;
@@ -249,15 +310,17 @@ h1, h2, h3, h4, h5, h6 {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/back.jpg) no-repeat center top;
+	background: url(../img/backphoto.png) no-repeat center top;
+  /*background-color: rgb(44,139,62);*/
 	margin-top: 0px;
-	padding-top:120px;
+	padding-top:0px;
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 700px;
-	width: 100%;
-	
+  min-height: 700px;
+  width: 100%;
+
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -267,7 +330,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
+ }
 
 #headerwrap h1 {
 	color:#ffffff;
@@ -458,7 +521,7 @@ h1, h2, h3, h4, h5, h6 {
   -moz-transition: opacity 0.4s;
   -o-transition: opacity 0.4s;
   transition: opacity 0.4s;
-  
+
 }
 
 .project:hover .photo-wrapper {
